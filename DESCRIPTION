@@ -3,8 +3,6 @@ Title: Demonstrate that configure script in R package can use the wrong R to det
 Version: 0.0.0.9000
 Authors: Jack Wasey <jack@jackwasey.com> [aut,cre,cph]
 Description: What the package does (one paragraph).
-Depends: R (>= 3.2.2)
+Depends: R (>= 3.2.1)
 License: GPL-3
 LazyData: true
-LinkingTo: Rcpp
-Imports: Rcpp

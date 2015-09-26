@@ -3,8 +3,9 @@ AC_INIT(configrdev)
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADERS([src/config.h:src/config.h.in])
 
-# assuming that calling 'R' will pick the right one, even though we might be running in Rdevel...
-# workaround is for R_HOME to be set in advance, preventing the call to the wrong R.
+echo "is R_HOME already set?"
+echo "R_HOME = ${R_HOME}"
+
 : ${R_HOME=`R RHOME`}
 if test -z "${R_HOME}"; then
   echo "could not determine R_HOME"
@@ -12,6 +13,10 @@ if test -z "${R_HOME}"; then
 else
   echo "found R_HOME at: ${R_HOME}"
 fi
+
+: ${RD_HOME=`RD RHOME`}
+echo "found RD_HOME at: ${RD_HOME}"
+
 R_BIN="${R_HOME}/bin/R"
 CC=`"${R_BIN}" CMD config CC`
 CPP=`"${R_BIN}" CMD config CPP`
