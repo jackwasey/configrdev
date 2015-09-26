@@ -1,10 +1,10 @@
 Package: configrdev
-Title: What the Package Does (one line, title case)
+Title: Demonstrate that configure script in R package can use the wrong R to determine R_HOME
 Version: 0.0.0.9000
-Authors@R: Jack Wasey <jack@jackwasey.com> [aut,cre,cph]
+Authors: Jack Wasey <jack@jackwasey.com> [aut,cre,cph]
 Description: What the package does (one paragraph).
 Depends: R (>= 3.2.2)
-License: What license is it under?
+License: GPL-3
 LazyData: true
 LinkingTo: Rcpp
 Imports: Rcpp
